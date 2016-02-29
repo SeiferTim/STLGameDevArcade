@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+	
+	<text name="title" x="0" y="20" text="STL Game Dev Arcade" size="20" align="center" style="bold" color="0xffffff" outline="0x666666" font="opensans" width="0" >
+		<anchor x="screen.center" y="screen.top" x-flush="center" y-flush="top" />
+	</text>
+	
+</data>
