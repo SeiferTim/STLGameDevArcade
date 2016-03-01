@@ -3,11 +3,8 @@ package;
 import flixel.FlxG;
 import flixel.FlxGame;
 import flixel.FlxState;
-import flixel.addons.ui.FlxUIState;
 import flixel.system.scaleModes.StageSizeScaleMode;
 import openfl.display.Sprite;
-import openfl.events.Event;
-import openfl.events.FullScreenEvent;
 
 class Main extends Sprite
 {
@@ -22,6 +19,8 @@ class Main extends Sprite
 	public function new()
 	{
 		super();
+		
+		Reg.loadSettings();
 		addChild(new FlxGame(gameWidth, gameHeight, initialState, zoom, framerate, framerate, skipSplash, startFullscreen));
 		FlxG.scaleMode = new StageSizeScaleMode();
 		

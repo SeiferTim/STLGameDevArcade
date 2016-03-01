@@ -1,8 +1,20 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <data>
 	
-	<text name="title" x="0" y="20" text="STL Game Dev Arcade" size="20" align="center" style="bold" color="0xffffff" outline="0x666666" font="opensans" width="0" >
+	<button name="close" x="-5" y="5" label="" width="48" height="48" >
+		<anchor x="screen.right" x-flush="right" y="screen.top" y-flush="top" />
+		<graphic name="up" image="ui/close" />
+		<graphic name="down" image="ui/close" />
+		<graphic name="over" image="ui/close" />
+		<param type="string" value="close" />
+	</button>
+	
+	<text name="title" x="0" y="20" text="STL Game Dev Arcade" size="36" align="center" style="bold" color="0xffffff" outline="0x333333" font="opensans" width="0" >
 		<anchor x="screen.center" y="screen.top" x-flush="center" y-flush="top" />
 	</text>
+	
+	<region name="main-area" x="0" y="30" width="screen.width-60" height="screen.height-title.height-90" >
+		<anchor x="screen.center" x-flush="center" y="title.bottom" y-flush="top" />
+	</region>
 	
 </data>

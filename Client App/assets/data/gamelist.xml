@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+	<game>
+		<name>Test Game 1</name>
+		<author>Some Body</author>
+		<os>win,mac,linux,android,ios</os>
+		<tags>action,arcade</tags>
+		<git>SomeBody/TestGame1</git>
+		<executable>export/windows/cpp/bin/TestGame1.exe</executable>
+	</game>
+</data>
