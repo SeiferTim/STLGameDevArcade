@@ -6,7 +6,6 @@ import flixel.addons.ui.FlxUISprite;
 import flixel.addons.ui.FlxUIText;
 import flixel.text.FlxText.FlxTextBorderStyle;
 import flixel.ui.FlxButton;
-import openfl.display.BitmapData;
 
 import openfl.Assets;
 
@@ -16,17 +15,17 @@ class GameEntry extends FlxUIGroup
 	private var logo:FlxUISprite;
 	private var title:FlxUIText;
 	private var parent:MenuState;
-	private var id:Int = 0;
+	private var id:String = "";
 
-	public function new(X:Float, Y:Float, id:Int, parent:MenuState, gameData:GameData) 
+	public function new(X:Float, Y:Float, parent:MenuState, gameData:GameData) 
 	{
 		super(X, Y);
 		
-		this.id = id;
+		this.id = gameData.git;
 		this.parent = parent;
 		
 		logo = new FlxUISprite(5,5);
-		logo.loadGraphic(Assets.getBitmapData("games/" + gameData.git + "/logo.png"), false, 260, 120);
+		logo.loadGraphic(gameData.getLogo(), false, 260, 120);
 		
 		title = new FlxUIText(5, 125, 260, gameData.name, 24);
 		title.font = AssetPaths.opensansb__ttf;

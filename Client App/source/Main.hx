@@ -22,6 +22,7 @@ class Main extends Sprite
 		
 		Reg.loadSettings();
 		addChild(new FlxGame(gameWidth, gameHeight, initialState, zoom, framerate, framerate, skipSplash, startFullscreen));
+		FlxG.autoPause = false;
 		FlxG.scaleMode = new StageSizeScaleMode();
 		
 		

@@ -9,6 +9,10 @@
 		<param type="string" value="close" />
 	</button>
 	
+	<sprite name="syncing" src="ui/download" x="-5" y="5" width="50" height="50"  >
+		<anchor x="close.left" x-flush="right" y="screen.top" y-flush="top"/>
+	</sprite>
+	
 	<text name="title" x="0" y="20" text="STL Game Dev Arcade" size="36" align="center" style="bold" color="0xffffff" outline="0x333333" font="opensans" width="0" >
 		<anchor x="screen.center" y="screen.top" x-flush="center" y-flush="top" />
 	</text>
